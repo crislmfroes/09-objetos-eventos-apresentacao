@@ -1,0 +1,44 @@
+html {
+  font-family: Raleway, verdana, arial, tahoma, sans-serif;
+  color: green;
+}
+div.container {
+  max-width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+}
+div.grafico {
+  width: 55%;
+}
+div.dados {
+  width: 35%;
+}
+div.dados, div.grafico {
+  margin: 0% 2.5%;
+}
+@media (max-width: 500px) {
+  div.grafico, div.dados {
+    width: 100%;
+  }
+  div.dados {
+    order: 1;
+  }
+  div.grafico {
+    order: 2;
+  }
+}
+div.barra {
+  text-align: center;
+  vertical-align: middle;
+  height: 50px;
+  line-height: 50px;
+  background-color: purple;
+  /*top, right, botton, left*/
+  /*(top, bottom), (right, left)*/
+  margin: 10px 0px;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+  transition: width 1s ease-out;
+  min-width: 20px;
+  width: 0%;
+}
